@@ -6,6 +6,7 @@
     <title>small box office</title>
     <link rel="stylesheet" href="./global.css" />
     <link rel="stylesheet" href="./index.css" />
+    <!-- google fonts -->
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" />
@@ -15,6 +16,12 @@
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@600&display=swap" />
+    <!-- splide css cdn -->
+    <link
+      href="
+https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
+"
+      rel="stylesheet" />
   </head>
   <body>
     <div class="main" id="home">
@@ -51,19 +58,6 @@
                 <button class="get-a-quote-wrapper">
                   <a class="get-a-quote">GET A QUOTE</a>
                 </button>
-                <div class="vuesaxoutlinesearch-normal-wrapper">
-                  <img
-                    class="vuesaxoutlinesearch-normal-icon"
-                    alt=""
-                    src="./public/vuesaxoutlinesearchnormal.svg" />
-                </div>
-                <div class="frame-wrapper">
-                  <div class="line-parent">
-                    <div class="frame-child"></div>
-                    <div class="frame-item"></div>
-                    <div class="frame-inner"></div>
-                  </div>
-                </div>
               </div>
             </div>
           </div>
@@ -460,14 +454,55 @@
             <div class="kaam-25-hai-wrapper">
               <h1 class="kaam-25-hai">Kaam 25 hai</h1>
             </div>
-            <div class="projects-image-container">
-              <div class="projects-images"></div>
-              <div class="projects-images1"></div>
-              <div class="projects-images1"></div>
-              <div class="single-project-image">
-                <div class="project-image"></div>
+            <div class="projects-reel-container">
+              <div class="splide__track">
+                <div class="splide__list">
+                  <div class="splide__slide">
+                    <video controls muted autoplay loop>
+                      <source src="public/v1.mp4" type="video/mp4" />
+                    </video>
+                  </div>
+                  <div class="splide__slide projects-images1">
+                    <video controls muted autoplay loop>
+                      <source src="public/v2.mp4" type="video/mp4" />
+                    </video>
+                  </div>
+                  <div class="splide__slide projects-images1">
+                    <video controls muted autoplay loop>
+                      <source src="public/v3.mp4" type="video/mp4" />
+                    </video>
+                  </div>
+                  <div class="splide__slide projects-images1">
+                    <video controls muted autoplay loop>
+                      <source src="public/v4.mp4" type="video/mp4" />
+                    </video>
+                  </div>
+                  <div class="splide__slide projects-images1">
+                    <video controls muted autoplay loop>
+                      <source src="public/v5.mp4" type="video/mp4" />
+                    </video>
+                  </div>
+                  <div class="splide__slide projects-images1">
+                    <video controls muted autoplay loop>
+                      <source src="public/v6.mp4" type="video/mp4" />
+                    </video>
+                  </div>
+                  <div class="splide__slide projects-images1">
+                    <video controls muted autoplay loop>
+                      <source src="public/v7.mp4" type="video/mp4" />
+                    </video>
+                  </div>
+                  <div class="splide__slide projects-images1">
+                    <video controls muted autoplay loop>
+                      <source src="public/v8.mp4" type="video/mp4" />
+                    </video>
+                  </div>
+                </div>
               </div>
-              <div class="projects-images3"></div>
+
+              <!-- <div class="projects-images1"></div>
+              <div class="projects-images1"></div>
+              <div class="projects-images1"></div> -->
             </div>
           </div>
           <div class="more-projects-button">
@@ -1554,7 +1589,7 @@
                 </div>
               </div>
             </div>
-            <div class="service-links-column">
+            <!-- <div class="service-links-column">
               <div class="services-and-support">
                 <b class="our-services">OUR SERVICES</b>
                 <div class="service-list">
@@ -1585,7 +1620,7 @@
                   <div class="terms-condition">Recent news</div>
                 </div>
               </div>
-            </div>
+            </div> -->
           </div>
         </div>
         <div class="copyright">
@@ -1599,9 +1634,9 @@
 
               <div class="footer-links">
                 <div class="footer-link-list">
-                  <a class="about-us1">About Us</a>
-                  <a class="about-us1">Services</a>
-                  <a class="pricing1">Pricing</a>
+                  <a class="about-us1" href="#ham-aapke-hai-kon">About Us</a>
+                  <a class="about-us1" href="#services">Services</a>
+                  <a class="pricing1" href="#pricing">Pricing</a>
                   <div class="contact1">Contact</div>
                 </div>
               </div>
@@ -1618,5 +1653,26 @@
         </div>
       </footer>
     </div>
+
+    <script src="
+https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
+"></script>
+    <script type="text/javascript">
+      var splide = new Splide(".splide", {
+        perPage: 4,
+        gap: "3rem",
+        breakpoints: {
+          640: {
+            perPage: 2,
+            gap: "7rem",
+          },
+          480: {
+            perPage: 1,
+            gap: "7rem",
+          },
+        },
+      });
+      splide.mount();
+    </script>
   </body>
 </html>
