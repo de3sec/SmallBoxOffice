@@ -1324,11 +1324,10 @@ video {
   position: relative;
   border: 1px solid var(--color-white);
   box-sizing: border-box;
-  gap: 2rem;
   flex: 1;
   min-width: 12.125rem;
   display: block;
-  height: 32rem;
+  height: 31rem;
   max-width: 100%;
 }
 .projects-content,
@@ -1343,12 +1342,8 @@ video {
 .projects-reel-container {
   flex-direction: row;
   justify-content: center;
+}
 
-  gap: var(--gap-10xl);
-}
-.splide__list {
-  gap: 3rem;
-}
 .projects-content {
   flex-direction: column;
   justify-content: flex-start;
@@ -3831,16 +3826,18 @@ video {
     padding-bottom: var(--padding-8xl);
     box-sizing: border-box;
   }
-  .kaam-25-hai {
-    font-size: var(--font-size-13xl);
-  }
-  .projects-reel-container {
-    flex-wrap: wrap;
-  }
   .projects-container-wrapper {
     padding-bottom: var(--padding-86xl);
     box-sizing: border-box;
   }
+  .kaam-25-hai {
+    font-size: var(--font-size-13xl);
+  }
+
+  .projects-reel-container {
+    flex-wrap: wrap;
+  }
+
   .aap-convince-ho-container {
     font-size: var(--font-size-13xl);
   }
