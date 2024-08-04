@@ -1327,7 +1327,7 @@ video {
   flex: 1;
   min-width: 12.125rem;
   display: block;
-  height: 31rem;
+  height: auto;
   max-width: 100%;
 }
 .projects-content,
