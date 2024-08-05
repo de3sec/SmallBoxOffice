@@ -3294,7 +3294,7 @@ video {
   align-items: flex-end;
   justify-content: flex-start;
   padding: 0 0 58.875rem;
-  min-height: 96.438rem;
+  min-height: 98.9rem;
   text-align: left;
   font-size: var(--font-size-21xl);
   color: var(--color-darkslateblue-100);
@@ -3362,7 +3362,7 @@ video {
   height: 6.813rem;
 }
 .frame-parent38 {
-  height: 45.313rem;
+  height: 48.313rem;
   width: 62.25rem;
   position: relative;
   max-width: 100%;
@@ -3387,7 +3387,7 @@ video {
   max-width: 100%;
 }
 .hum-itne-bhi-kuch-khaas-nhi-ha-parent {
-  top: 488.75rem;
+  top: 486rem;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -3398,7 +3398,7 @@ video {
   font-family: var(--font-poppins);
 }
 .main-item {
-  height: 75rem;
+  height: 80rem;
   right: 0;
   bottom: 228.125rem;
   overflow: hidden;
