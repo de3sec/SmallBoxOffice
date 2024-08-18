@@ -12,6 +12,7 @@ body {
   --font-rammetto-one: "Rammetto One";
 
   /* font sizes */
+  --font-size-miniest: 0.7rem;
   --font-size-mini: 0.938rem;
   --font-size-21xl: 2.5rem;
   --font-size-5xl: 1.5rem;
@@ -43,6 +44,7 @@ body {
   --color-thistle: #e3cbff;
   --color-plum-100: #ffc5f5;
   --color-plum-200: #ffa6ef;
+  --color-darkbrown: #730960;
 
   /* Gaps */
   --gap-mini: 0.937rem;
@@ -89,6 +91,7 @@ body {
   --padding-19xl: 2.375rem;
   --padding-2xl: 1.312rem;
   --padding-53xl: 4.5rem;
+  --padding-54xl: 5.5rem;
   --padding-9xs: 0.25rem;
   --padding-8xl: 1.687rem;
   --padding-5xl: 1.5rem;
