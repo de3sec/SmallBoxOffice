@@ -1529,21 +1529,23 @@ video {
   height: 100%;
   z-index: 2;
 }
+
 .bottle1-03-1-icon,
-.text-01-1-icon {
+.bottle1-04-1-icon,
+.bottle1-01-1-icon {
   position: absolute;
-  top: 0.188rem;
-  left: 7.438rem;
-  width: 7.125rem;
-  height: 4.813rem;
+  top: 0.125rem;
+  left: 2.625rem;
+  width: 14.375rem;
+  height: 18.063rem;
   object-fit: cover;
   z-index: 5;
 }
-.bottle1-03-1-icon {
-  top: 5.125rem;
-  left: 5.625rem;
-  width: 10.375rem;
-  height: 10.063rem;
+.bottle1-01-1-icon {
+  top: -0.8rem;
+}
+.bottle1-04-1-icon {
+  top: -0.2rem;
 }
 .first-graphic-elements {
   align-self: stretch;
@@ -1961,23 +1963,7 @@ video {
   white-space: nowrap;
   z-index: 4;
 }
-.bottle1-04-1-icon,
-.text-01-2-icon {
-  position: absolute;
-  top: 0.375rem;
-  left: 5.688rem;
-  width: 9.125rem;
-  height: 4.625rem;
-  object-fit: cover;
-  z-index: 4;
-}
-.bottle1-04-1-icon {
-  top: 4.25rem;
-  left: 4.625rem;
-  width: 11.563rem;
-  height: 11.5rem;
-  z-index: 5;
-}
+
 .secondary-images {
   position: absolute;
   width: calc(100% - 21px);
@@ -2115,7 +2101,7 @@ video {
   object-fit: cover;
   z-index: 4;
 }
-.bottle1-01-1-icon {
+/* .bottle1-01-1-icon {
   position: absolute;
   top: 5.125rem;
   left: 5.375rem;
@@ -2123,7 +2109,7 @@ video {
   height: 10.313rem;
   object-fit: cover;
   z-index: 5;
-}
+} */
 .image-one-row-two-parent {
   align-self: stretch;
   height: 15.875rem;
@@ -2586,6 +2572,9 @@ video {
   gap: var(--gap-42xl);
   padding-left: var(--padding-86xl);
   max-width: 100%;
+  /* background-image: url(public/vector-130.svg);
+  background-repeat: no-repeat;
+  background-position: top center; */
 }
 .view-more-container {
   display: flex;
