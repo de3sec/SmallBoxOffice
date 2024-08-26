@@ -8,7 +8,7 @@ document.getElementById("toggleButton").addEventListener("click", function () {
     myDiv.style.flexDirection = "column"; // Show the div as a flex container
     myDiv.style.gap = "2rem"; // Show the div as a flex container
     buttonText.textContent = "View Less"; // Change button text to "View Less"
-    backgrouPurpleImage.style.bottom = "355.3rem";
+    backgrouPurpleImage.style.bottom = "363.3rem";
     // teamTwoContainer.style.backgroundImage =
     //   "url(public/vector-130.svg) , url(public/Vector 133.svg), url(public/Vector 133.svg)";
     // teamTwoContainer.style.backgroundRepeat = "no-repeat, no-repeat, no-repeat";
