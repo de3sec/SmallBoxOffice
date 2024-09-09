@@ -22,3 +22,24 @@ document.getElementById("toggleButton").addEventListener("click", function () {
     // teamTwoContainer.style.backgroundPosition = "top center";
   }
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  const hamburgerEl = document.querySelector(".line-parent");
+
+  hamburgerEl.addEventListener("click", () => {
+    hamburgerEl.classList.toggle("hamburger--open");
+  });
+
+  navEl.addEventListener("click", () => {
+    hamburgerEl.classList.remove("hamburger--open");
+  });
+});
+
+function myFunction() {
+  var x = document.getElementById("hamburger-div-content");
+  if (x.style.display === "flex") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "flex";
+  }
+}
