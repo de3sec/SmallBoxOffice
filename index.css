@@ -504,15 +504,6 @@
   object-fit: cover;
   z-index: 2;
 }
-/* .rectangle-div {
-  width: 90rem;
-  height: 59.75rem;
-  position: relative;
-  background-color: var(--color-thistle);
-  display: none;
-  max-width: 100%;
-  z-index: 0;
-} */
 
 .bojh-description-container {
   display: flex;
@@ -524,8 +515,6 @@
 .bojh-right {
   display: flex;
   justify-content: center;
-
-  /* align-items: center; */
 }
 .bojh-left-1,
 .bojh-right-1 {
@@ -533,19 +522,23 @@
   align-items: flex-start;
   justify-content: flex-start;
   padding: 1em;
+  margin-bottom: -10px;
 }
+
 .bojh-left-2,
 .bojh-right-2 {
   display: flex;
   align-items: flex-end;
   justify-content: flex-end;
   padding: 1em;
+  margin-top: -10px;
 }
 .bojh-img {
   max-width: 100%;
   height: auto;
   object-fit: cover;
 }
+
 @media (max-width: 768px) {
   .bojh-description-container {
     display: flex;
@@ -615,33 +608,7 @@
   padding: 0 var(--padding-2xl) 0 var(--padding-xl);
   position: relative;
 }
-.benefit-shape-container,
-.benefit-shape-sub-container {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  max-width: 100%;
-}
-.benefit-shape-sub-container {
-  align-self: stretch;
-  justify-content: flex-start;
-  gap: var(--gap-5xl);
-}
-.benefit-shape-container {
-  flex: 1;
-  justify-content: flex-end;
-  padding: 0 0 2.143rem;
-  box-sizing: border-box;
-  min-width: 19.313rem;
-}
-.marketing-shapes-child {
-  position: absolute;
-  top: 14rem;
-  left: 19.188rem;
-  width: 3.5rem;
-  height: 3.5rem;
-  z-index: 1;
-}
+
 .red-shape {
   position: absolute;
   top: 3.418rem;
@@ -849,6 +816,7 @@
 }
 .rasode-mein-kya {
   margin: 0;
+  max-width: 100%;
   height: auto;
   position: relative;
   display: inline-block;
@@ -1198,7 +1166,6 @@
   align-self: stretch;
   flex-direction: row;
   align-items: flex-start;
-  padding: 0 0 1.25rem;
   text-align: left;
   font-size: var(--font-size-21xl);
   color: var(--color-white);
@@ -1312,9 +1279,12 @@ video {
 }
 .projects-container,
 .projects-container-wrapper {
+  margin-top: 0;
   display: flex;
   align-items: flex-start;
   max-width: 100%;
+  padding-bottom: 2rem;
+  background-color: #a1268b;
 }
 .projects-container {
   width: 71.813rem;
@@ -1322,12 +1292,26 @@ video {
   justify-content: flex-start;
   gap: 5.125rem;
 }
-
+.kareena {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.kareena-line {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.stat-img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
 .projects-container-wrapper {
   align-self: stretch;
   flex-direction: row;
   justify-content: center;
-  padding: 0 var(--padding-xl) 0 var (--padding-2xl);
+  padding: 0 var(--padding-xl) 1rem var (--padding-2xl);
   box-sizing: border-box;
   text-align: left;
   font-size: var(--font-size-21xl);
@@ -1363,7 +1347,7 @@ video {
     rgba(255, 255, 255, 0.89),
     rgba(253, 155, 220, 0.91) 100%
   );
-  padding-top: 6rem;
+  padding-top: 2rem;
   height: 22rem;
   width: 90.188rem;
 }
@@ -1399,40 +1383,18 @@ video {
 .statistics-container,
 .statistics-content {
   display: flex;
-  align-items: flex-start;
-  padding: 0 5rem;
-  max-width: 100%;
+  align-items: center;
+  padding: 1rem;
+  width: 100%;
 }
 .statistics-content {
-  flex: 1;
   flex-direction: row;
-  gap: 10rem;
+  justify-content: space-evenly;
 }
 .statistics-container {
   flex-direction: row;
-  justify-content: flex-end;
-  padding: 0 var(--padding-2xs);
+  justify-content: center;
   box-sizing: border-box;
-}
-/* .first-graphic-container-child {
-  width: 22.813rem;
-  height: 57.75rem;
-  position: relative;
-  border-radius: var(--br-11xl);
-  border: 1px dashed var(--color-white);
-  box-sizing: border-box;
-  display: none;
-  max-width: 100%;
-} */
-.first-graphic-elements-child {
-  position: absolute;
-  top: 0;
-  left: 0;
-  border-radius: var(--br-11xl);
-  background-color: var(--color-blueviolet);
-  width: 100%;
-  height: 100%;
-  z-index: 2;
 }
 
 .bottle1-03-1-icon,
@@ -2090,17 +2052,6 @@ video {
 .statistics-graphics {
   max-width: 100%;
 }
-.images-row-two {
-  flex: 1;
-  border-radius: var(--br-11xl);
-  border: 1px dashed var(--color-white);
-  box-sizing: border-box;
-  flex-direction: column;
-  padding: 0.312rem var(--padding-3xs) var(--padding-23xl);
-  min-width: 14.813rem;
-  z-index: 3;
-  max-width: 21.813rem;
-}
 .statistics-graphics {
   align-self: stretch;
   flex-direction: row;
@@ -2112,15 +2063,11 @@ video {
 .statistics-container-parent {
   display: flex;
   flex-direction: column;
-  /* justify-content: flex-start; */
-  width: 100%;
+  max-width: 100%;
 }
-.statistics-container-parent {
-  align-self: stretch;
-}
+
 .convinced-container {
   width: 100%;
-  padding: 0 5rem;
   align-items: flex-start;
   justify-content: center;
   gap: 2.875rem;
@@ -2141,40 +2088,6 @@ video {
   font-family: var(--font-poppins);
 }
 
-.jasneet,
-.muskan {
-  height: 2.25rem;
-  bottom: 24.438rem;
-  font-size: inherit;
-  font-weight: 600;
-  font-family: inherit;
-  display: inline-block;
-  z-index: 1;
-}
-.jasneet {
-  margin: 0 !important;
-  position: absolute;
-  left: 17.063rem;
-}
-.muskan {
-  left: 33.813rem;
-}
-.muskan,
-.rohit,
-.team-horizontal-icon {
-  position: absolute;
-  margin: 0 !important;
-}
-.rohit {
-  height: 2.25rem;
-  right: 34.438rem;
-  bottom: 24.438rem;
-  font-size: inherit;
-  font-weight: 600;
-  font-family: inherit;
-  display: inline-block;
-  z-index: 1;
-}
 .team-horizontal-icon {
   height: 13.813rem;
   width: 13.813rem;
@@ -3499,8 +3412,8 @@ video {
   }
 
   .services-offered {
-    padding-bottom: var(--padding-36xl);
     box-sizing: border-box;
+    margin-bottom: 0;
   }
   .projects-content {
     gap: 2.438rem;
@@ -3593,7 +3506,7 @@ video {
     box-sizing: border-box;
   }
   .projects-container-wrapper {
-    padding-bottom: 0;
+    padding-bottom: 1rem;
     box-sizing: border-box;
   }
   .kaam-25-hai {
@@ -3689,7 +3602,6 @@ video {
     box-sizing: border-box;
   }
   .services-offered {
-    padding-bottom: var(--padding-17xl);
     box-sizing: border-box;
   }
   .projects-container,
