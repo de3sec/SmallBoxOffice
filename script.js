@@ -8,7 +8,6 @@ document.getElementById("toggleButton").addEventListener("click", function () {
     myDiv.style.flexDirection = "column"; // Show the div as a flex container
     myDiv.style.gap = "2rem"; // Show the div as a flex container
     buttonText.textContent = "View Less"; // Change button text to "View Less"
-   
   } else {
     myDiv.style.display = "none"; // Hide the div
     buttonText.textContent = "View More"; // Change button text to "View More"

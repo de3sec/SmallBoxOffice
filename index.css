@@ -218,17 +218,6 @@
   gap: var(--gap-2xl);
 }
 
-.hamburger--open .frame-child {
-  transform: translateY(6px) rotate(45deg);
-}
-.hamburger--open .frame-item {
-  opacity: 0;
-}
-
-.hamburger--open .frame-inner {
-  transform: translateY(-11px) rotate(-45deg);
-}
-
 @media (max-width: 768px) {
   .frame-wrapper {
     display: block;
@@ -975,16 +964,17 @@ video {
   z-index: 2;
 }
 .pricing-icon {
-  position: absolute;
   object-fit: cover;
+  width: 13rem;
   max-width: 100%;
-  height: auto;
+  height: 8rem;
+  /* height: auto; */
+  border-radius: 1rem;
   z-index: 5;
 }
 
 .upper-graphic-elements {
   align-self: stretch;
-  height: 15.625rem;
   position: relative;
 }
 
@@ -994,7 +984,6 @@ video {
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
-
   gap: 10rem;
 }
 .lower-graphic-inner {
@@ -1008,6 +997,7 @@ video {
   border: 1px dashed var(--color-white);
   box-sizing: border-box;
   display: flex;
+  gap: 0.3rem;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
@@ -1071,10 +1061,11 @@ video {
   margin-top: 0 !important;
   justify-content: center;
   position: relative;
+  gap: 0 !important;
 }
 .service-name-div {
   display: flex;
-  gap: 1em;
+  gap: 0.7em;
   margin-bottom: 0 !important;
   padding: 0 !important;
 }
@@ -1082,15 +1073,20 @@ video {
   max-width: 100%;
   height: auto;
 }
-.service-line {
-  margin-top: 0 !important;
+.service-name-div p {
+  font-size: 0.6rem;
 }
+.price-line {
+  height: 1px !important;
+  background-color: #fff;
+}
+
 .service-button-wrapper {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
   width: 11.313rem;
-  height: 3.125rem;
+  height: 1.125rem;
   flex-direction: row;
   padding: 0 var(--padding-11xs);
   box-sizing: border-box;
@@ -1109,10 +1105,14 @@ video {
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
-  gap: var(--gap-2xs);
+  gap: var(--gap-xs);
   white-space: nowrap;
   color: var(--color-white);
   z-index: 4;
+}
+.get-started1 {
+  justify-content: center;
+  align-items: center;
 }
 /* testimonial */
 .testimonial-child {
@@ -2697,11 +2697,11 @@ video {
     gap: var(--gap-base);
   }
 
-  .service-container,
+  /* .service-container,
   .images-row-two {
     padding-bottom: var(--padding-xl);
     box-sizing: border-box;
-  }
+  } */
   .jasneet,
   .muskan,
   .rohit {
