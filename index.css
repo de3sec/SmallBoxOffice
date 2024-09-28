@@ -1011,6 +1011,25 @@ video {
   justify-content: center;
   z-index: 2;
 }
+.more-projects-button button {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  padding: 0.5rem;
+  gap: 0.1rem !important;
+  width: 8rem;
+  height: 3rem;
+  text-decoration: none;
+  outline: none;
+}
+.more-projects-button a {
+  text-decoration: none;
+}
+.more-projects-button a:hover {
+  text-decoration: none;
+  color: inherit;
+}
 
 .statistics-graphics {
   align-self: stretch;
@@ -2777,4 +2796,30 @@ video {
 .accordion {
   cursor: pointer;
   transition: 0.4s;
+}
+
+/*service css  */
+.short-films {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0;
+  gap: 1rem;
+  width: 100%;
+  background-color: var(--color-purple-100);
+}
+.short-films-heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.short-films-heading h3 {
+  font-family: var(--font-poppins);
+  font-size: medium;
+  color: var(--color-white);
+}
+.video-container {
+  width: 15rem;
+  height: 23rem;
 }
