@@ -1002,7 +1002,7 @@ video {
   align-items: center;
   justify-content: flex-start;
   padding: var(--padding-4xs) var(--padding-4xs) var(--padding-23xl);
-  max-width: 100%;
+  width: 15rem;
   z-index: 3;
 }
 
@@ -2539,6 +2539,9 @@ video {
   }
 }
 @media screen and (max-width: 450px) {
+  .service-container {
+    width: 100% !important;
+  }
   .top-team-members {
     display: flex;
     flex-direction: column;
@@ -2589,6 +2592,7 @@ video {
   .statistics-graphics {
     overflow-x: auto;
     scroll-behavior: smooth;
+    justify-content: flex-start;
   }
   .statistics-container {
     padding: 4rem 0;
@@ -2717,11 +2721,6 @@ video {
     gap: var(--gap-base);
   }
 
-  /* .service-container,
-  .images-row-two {
-    padding-bottom: var(--padding-xl);
-    box-sizing: border-box;
-  } */
   .jasneet,
   .muskan,
   .rohit {
