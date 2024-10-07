@@ -10,13 +10,8 @@
     <!-- swiper -->
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <!-- splide css cdn -->
-    <link
-      href="
-https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
-"
-      rel="stylesheet" />
+      href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
     <!-- google fonts -->
     <link
       rel="stylesheet"
@@ -27,6 +22,31 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@600&display=swap" />
+    <style>
+      .container {
+        width: 80%;
+        max-width: 800px;
+        margin: 0 auto;
+      }
+
+      .swiper {
+        width: 100%;
+        height: auto;
+      }
+
+      .swiper-slide {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #f0f0f0;
+      }
+
+      .swiper-slide iframe {
+        width: 100%;
+        height: 315px;
+        border: none;
+      }
+    </style>
   </head>
   <body>
     <div class="main" id="home">
@@ -50,13 +70,24 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                   >
                   <a class="services nav-link" href="#services">SERVICES</a>
                   <a class="pricing nav-link" href="#pricing">PRICING</a>
-                  <a class="contact nav-link" id="cONTACTText">CONTACT</a>
+                  <a
+                    href="https://forms.gle/Rr4XWg6rPH3TyU3u9"
+                    target="_blank"
+                    class="contact nav-link"
+                    id="cONTACTText"
+                    >CONTACT</a
+                  >
                 </div>
               </div>
 
               <div class="frame-group">
                 <button class="get-a-quote-wrapper">
-                  <a class="get-a-quote">CONTACT US</a>
+                  <a
+                    href="https://forms.gle/Rr4XWg6rPH3TyU3u9"
+                    target="_blank"
+                    class="get-a-quote"
+                    >CONTACT US</a
+                  >
                 </button>
               </div>
               <div class="frame-wrapper">
@@ -87,13 +118,24 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
               >
               <a class="mobile-tab-nav-link" href="#services">SERVICES</a>
               <a class="mobile-tab-nav-link" href="#pricing">PRICING</a>
-              <a class="mobile-tab-nav-link" id="cONTACTText">CONTACT</a>
+              <a
+                href="https://forms.gle/Rr4XWg6rPH3TyU3u9"
+                target="_blank"
+                class="mobile-tab-nav-link"
+                id="cONTACTText"
+                >CONTACT</a
+              >
             </div>
           </div>
 
           <div class="mobile-tab-frame-group">
             <button class="get-a-quote-wrapper">
-              <a class="get-a-quote">CONTACT US</a>
+              <a
+                href="https://forms.gle/Rr4XWg6rPH3TyU3u9"
+                target="_blank"
+                class="get-a-quote"
+                >CONTACT US</a
+              >
             </button>
           </div>
         </div>
@@ -105,115 +147,117 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
         <div class="short-films-heading">
           <h3>Short Films</h3>
         </div>
-        <div class="splide">
-          <div class="splide__track">
-            <div class="splide__list">
-              <div class="splide__slide">
-                <video controls muted autoplay loop>
-                  <iframe
-                    width="500px"
-                    height="281px"
-                    src="https://www.youtube.com/embed/mu5jjYQdwYE"
-                    title="जब पत्नी को हुआ अपनी गलती का अहसास | Jab Patni Ko Hua Apni Galti Ka Ahsaas | Short Film |Short Movie"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin"
-                    allowfullscreen></iframe>
-                </video>
+        <div class="container">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <!-- Slide 1 -->
+              <div class="swiper-slide">
+                <iframe
+                  width="100%"
+                  height="315"
+                  src="https://www.youtube.com/embed/mu5jjYQdwYE"
+                  title="जब पत्नी को हुआ अपनी गलती का अहसास | Jab Patni Ko Hua Apni Galti Ka Ahsaas | Short Film |Short Movie"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen></iframe>
               </div>
-              <div class="splide__slide">
-                <video controls muted autoplay loop>
-                  <iframe
-                    width="500px"
-                    height="281px"
-                    src="https://www.youtube.com/embed/mu5jjYQdwYE"
-                    title="जब पत्नी को हुआ अपनी गलती का अहसास | Jab Patni Ko Hua Apni Galti Ka Ahsaas | Short Film |Short Movie"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin"
-                    allowfullscreen></iframe>
-                </video>
+              <!-- Slide 2 -->
+              <div class="swiper-slide">
+                <iframe
+                  width="100%"
+                  height="315"
+                  src="https://www.youtube.com/embed/X0j7Vo-DJ24"
+                  title="प्यार का असली मतलब | Pyaar Ka Asli Matlab | Hindi Short Film | Hindi Short Movie | Social Filmy"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen></iframe>
               </div>
-              <div class="splide__slide">
-                <video controls muted autoplay loop>
-                  <source
-                    src="https://youtu.be/mu5jjYQdwYE?si=m_2NlpYkAsFZlz4A"
-                    type="video/mp4" />
-                </video>
+              <!-- Slide 3 -->
+              <div class="swiper-slide">
+                <iframe
+                  width="100%"
+                  height="315"
+                  src="https://www.youtube.com/embed/sapsWc6cJsc"
+                  title="गरीब बच्चे की भूख | Food for hungry poor child | Short Film | Short Movie | Social Filmy"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen></iframe>
               </div>
-              <div class="splide__slide">
-                <video controls muted autoplay loop>
-                  <source
-                    src="https://github.com/haripriya1909/sbo/raw/main/public/v4.mp4"
-                    type="video/mp4" />
-                </video>
+              <!-- Slide 4 -->
+              <div class="swiper-slide">
+                <iframe
+                  width="100%"
+                  height="315"
+                  src="https://www.youtube.com/embed/YDkygDWccNw"
+                  title="AI हो सकता है खतरनाक | AI can be dangerous | Short Film | Short Movie | Artificial Intelligence"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen></iframe>
               </div>
+              <!-- Slide 5 -->
+              <div class="swiper-slide">
+                <iframe
+                  width="100%"
+                  height="315"
+                  src="https://www.youtube.com/embed/NRFwegVRgpw"
+                  title="दो दोस्तों को एक ही लड़की से प्यार हुआ |Do Dosto Ko Ek Hi Ladki Se Pyaar Hua| Short Film Short Movie"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen></iframe>
+              </div>
+              <!-- Add more slides as needed -->
             </div>
+            <!-- Add Pagination and Navigation Buttons -->
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
           </div>
         </div>
       </section>
       <!-- corporate videos -->
       <section class="short-films">
         <div class="short-films-heading">
-          <h3>Corporate Films</h3>
+          <h3>Corporate Videos</h3>
         </div>
-        <div class="swiper">
-          <div class="swiper-container">
+        <div class="container">
+          <div class="swiper mySwiper">
             <div class="swiper-wrapper">
-              <!-- Slide 1 - YouTube Video -->
+              <!-- Slide 1 -->
               <div class="swiper-slide">
-                <div class="video-container">
-                  <iframe
-                    width="500px"
-                    height="281px"
-                    src="https://www.youtube.com/embed/mu5jjYQdwYE"
-                    title="जब पत्नी को हुआ अपनी गलती का अहसास | Jab Patni Ko Hua Apni Galti Ka Ahsaas | Short Film |Short Movie"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin"
-                    allowfullscreen></iframe>
-                </div>
+                <iframe
+                  width="100%"
+                  height="315"
+                  src="https://www.youtube.com/embed/liORz_N4WBs"
+                  title="Amwoodo | Corporate Film"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen></iframe>
               </div>
+              <!-- Slide 2 -->
               <div class="swiper-slide">
-                <div class="video-container">
-                  <iframe
-                    width="100%"
-                    height="100%"
-                    src="https://www.youtube.com/embed/X0j7Vo-DJ24"
-                    title="प्यार का असली मतलब | Pyaar Ka Asli Matlab | Hindi Short Film | Hindi Short Movie | Social Filmy"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin"
-                    allowfullscreen></iframe>
-                </div>
+                <iframe
+                  width="100%"
+                  height="315"
+                  src="https://www.youtube.com/embed/YWpXWT-bLH0"
+                  title="Indian Pollution Control Association | Corporate Film"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen></iframe>
               </div>
-              <div class="swiper-slide">
-                <div class="video-container">
-                  <iframe
-                    width="100%"
-                    height="100%"
-                    src="https://www.youtube.com/embed/sapsWc6cJsc"
-                    title="गरीब बच्चे की भूख | Food for hungry poor child | Short Film | Short Movie | Social Filmy"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin"
-                    allowfullscreen></iframe>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="video-container">
-                  <iframe
-                    width="100%"
-                    height="100%"
-                    src="https://www.youtube.com/embed/NRFwegVRgpw"
-                    title="दो दोस्तों को एक ही लड़की से प्यार हुआ |Do Dosto Ko Ek Hi Ladki Se Pyaar Hua| Short Film Short Movie"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin"
-                    allowfullscreen></iframe>
-                </div>
-              </div>
+
+              <!-- Add more slides as needed -->
             </div>
+            <!-- Add Pagination and Navigation Buttons -->
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
           </div>
         </div>
       </section>
@@ -222,131 +266,57 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
         <div class="short-films-heading">
           <h3>Documentries</h3>
         </div>
-        <div class="swiper">
-          <div class="swiper-container">
+        <div class="container">
+          <div class="swiper mySwiper">
             <div class="swiper-wrapper">
-              <!-- Slide 1 - YouTube Video -->
+              <!-- Slide 1 -->
               <div class="swiper-slide">
-                <div class="video-container">
-                  <iframe
-                    width="100%"
-                    height="100%"
-                    src="https://www.youtube.com/embed/mu5jjYQdwYE"
-                    title="जब पत्नी को हुआ अपनी गलती का अहसास | Jab Patni Ko Hua Apni Galti Ka Ahsaas | Short Film |Short Movie"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin"
-                    allowfullscreen></iframe>
-                </div>
+                <iframe
+                  width="100%"
+                  height="315"
+                  src="https://www.youtube.com/embed/9iUB5L3FVnk"
+                  title="DROP | Documentary"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen></iframe>
               </div>
+              <!-- Slide 2 -->
               <div class="swiper-slide">
-                <div class="video-container">
-                  <iframe
-                    width="100%"
-                    height="100%"
-                    src="https://www.youtube.com/embed/X0j7Vo-DJ24"
-                    title="प्यार का असली मतलब | Pyaar Ka Asli Matlab | Hindi Short Film | Hindi Short Movie | Social Filmy"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin"
-                    allowfullscreen></iframe>
-                </div>
+                <iframe
+                  width="100%"
+                  height="315"
+                  src="https://www.youtube.com/embed/QlVqfvgrZwA"
+                  title="SLMTT | Documentary"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen></iframe>
               </div>
+              <!-- Slide 3 -->
               <div class="swiper-slide">
-                <div class="video-container">
-                  <iframe
-                    width="100%"
-                    height="100%"
-                    src="https://www.youtube.com/embed/sapsWc6cJsc"
-                    title="गरीब बच्चे की भूख | Food for hungry poor child | Short Film | Short Movie | Social Filmy"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin"
-                    allowfullscreen></iframe>
-                </div>
+                <iframe
+                  width="100%"
+                  height="315"
+                  src="https://www.youtube.com/embed/I4b5BgDxJfk"
+                  title="SAKSHAM | Documentary"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen></iframe>
               </div>
-              <div class="swiper-slide">
-                <div class="video-container">
-                  <iframe
-                    width="100%"
-                    height="100%"
-                    src="https://www.youtube.com/embed/NRFwegVRgpw"
-                    title="दो दोस्तों को एक ही लड़की से प्यार हुआ |Do Dosto Ko Ek Hi Ladki Se Pyaar Hua| Short Film Short Movie"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin"
-                    allowfullscreen></iframe>
-                </div>
-              </div>
+
+              <!-- Add more slides as needed -->
             </div>
+            <!-- Add Pagination and Navigation Buttons -->
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
           </div>
         </div>
       </section>
       <!-- digital ads -->
-      <section class="short-films">
-        <div class="short-films-heading">
-          <h3>Digital Ads</h3>
-        </div>
-        <div class="swiper">
-          <div class="swiper-container">
-            <div class="swiper-wrapper">
-              <!-- Slide 1 - YouTube Video -->
-              <div class="swiper-slide">
-                <div class="video-container">
-                  <iframe
-                    width="100%"
-                    height="100%"
-                    src="https://www.youtube.com/embed/mu5jjYQdwYE"
-                    title="जब पत्नी को हुआ अपनी गलती का अहसास | Jab Patni Ko Hua Apni Galti Ka Ahsaas | Short Film |Short Movie"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin"
-                    allowfullscreen></iframe>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="video-container">
-                  <iframe
-                    width="100%"
-                    height="100%"
-                    src="https://www.youtube.com/embed/X0j7Vo-DJ24"
-                    title="प्यार का असली मतलब | Pyaar Ka Asli Matlab | Hindi Short Film | Hindi Short Movie | Social Filmy"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin"
-                    allowfullscreen></iframe>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="video-container">
-                  <iframe
-                    width="100%"
-                    height="100%"
-                    src="https://www.youtube.com/embed/sapsWc6cJsc"
-                    title="गरीब बच्चे की भूख | Food for hungry poor child | Short Film | Short Movie | Social Filmy"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin"
-                    allowfullscreen></iframe>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="video-container">
-                  <iframe
-                    width="100%"
-                    height="100%"
-                    src="https://www.youtube.com/embed/NRFwegVRgpw"
-                    title="दो दोस्तों को एक ही लड़की से प्यार हुआ |Do Dosto Ko Ek Hi Ladki Se Pyaar Hua| Short Film Short Movie"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin"
-                    allowfullscreen></iframe>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+
       <footer class="footer">
         <div class="footer-child"></div>
         <div class="footer-content">
@@ -440,25 +410,31 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
         </div>
       </footer>
     </div>
-    <script src="
-https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
-"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>
-      var splide = new Splide(".splide", {
-        perPage: 4,
-        gap: "1rem",
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
         breakpoints: {
           640: {
-            perPage: 2,
-            gap: "7rem",
+            slidesPerView: 2,
+            spaceBetween: 20,
           },
-          480: {
-            perPage: 1,
-            gap: "7rem",
+          768: {
+            slidesPerView: 3,
+            spaceBetween: 30,
           },
         },
       });
-      splide.mount();
     </script>
   </body>
 </html>
