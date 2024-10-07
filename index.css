@@ -2823,3 +2823,7 @@ video {
   width: 15rem;
   height: 23rem;
 }
+
+.div-mid-3 a {
+  text-decoration: none;
+}
