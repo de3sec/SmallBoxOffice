@@ -2008,7 +2008,7 @@ video {
   padding-top: var(--padding-12xl);
   margin-top: 7rem;
   width: 100%;
-  background: url(public/Rectangle\ 808.png);
+  background: url(https://cdn.shopify.com/s/files/1/0855/8847/6216/files/Rectangle_808.png?v=1728336221);
 }
 .testimonial-clients-content {
   display: flex;
@@ -2633,6 +2633,7 @@ video {
     flex-direction: column;
     padding: 1rem;
     gap: 0.7rem;
+    height: 33rem;
   }
   .founder-description {
     font-size: var(--font-size-mini);
@@ -2826,4 +2827,8 @@ video {
 
 .div-mid-3 a {
   text-decoration: none;
+}
+.contact1 a {
+  text-decoration: none;
+  color: #fcfcfc;
 }
